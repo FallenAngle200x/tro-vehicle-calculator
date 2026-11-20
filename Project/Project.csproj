@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCB12ABC-A286-4B4E-8A6B-44B6D3506A5C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="calculationprogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calculationprogram.Designer.cs">
+      <DependentUpon>calculationprogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GasCylinderExpiryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GasCylinderExpiryForm.Designer.cs">
+      <DependentUpon>GasCylinderExpiryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MCCarcalcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCCarcalcForm.Designer.cs">
+      <DependentUpon>MCCarcalcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Permission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Permission.Designer.cs">
+      <DependentUpon>Permission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PUCarcalcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUCarcalcForm.Designer.cs">
+      <DependentUpon>PUCarcalcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationForm.Designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SEDCarcalc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SEDCarcalc.Designer.cs">
+      <DependentUpon>SEDCarcalc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaxCalculationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaxCalculationForm.Designer.cs">
+      <DependentUpon>TaxCalculationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaxCosts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaxCosts.Designer.cs">
+      <DependentUpon>TaxCosts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileDetails.Designer.cs">
+      <DependentUpon>ProfileDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VANCarcalcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VANCarcalcForm.Designer.cs">
+      <DependentUpon>VANCarcalcForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="calculationprogram.resx">
+      <DependentUpon>calculationprogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GasCylinderExpiryForm.resx">
+      <DependentUpon>GasCylinderExpiryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCCarcalcForm.resx">
+      <DependentUpon>MCCarcalcForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Permission.resx">
+      <DependentUpon>Permission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PUCarcalcForm.resx">
+      <DependentUpon>PUCarcalcForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SEDCarcalc.resx">
+      <DependentUpon>SEDCarcalc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaxCalculationForm.resx">
+      <DependentUpon>TaxCalculationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaxCosts.resx">
+      <DependentUpon>TaxCosts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileDetails.resx">
+      <DependentUpon>ProfileDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VANCarcalcForm.resx">
+      <DependentUpon>VANCarcalcForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-09-18 225715.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-09-24 215816.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-09-24 2158161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-09-24 212045.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ringer Volume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tick Box.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
